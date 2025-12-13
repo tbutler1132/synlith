@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "name": "Synth",
+    "description": "Synths are the fundamental units of your generative model.\n\nEach Synth represents a preferred future sensory-state — an observation you want to see in the world when that part of your system is fulfilled.\nThere are no tasks or to-dos in this system.\n\nOnly Synths, identical in structure but different in Horizon:\n• Becoming — hyperprior\n• Vision — long-range preferred observations\n• Goal — major intermediate preferred observations\n• Project — bundled policies\n• Action — immediate control signals\n\nSynths form a fractal hierarchy: every Synth (except Becoming) must support a parent Synth.\n\nYour role is to update the world so that evidence aligns with your preferred observations — one Synth at a time.",
+    "fields": []
+  }
+]

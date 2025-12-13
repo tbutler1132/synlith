@@ -1,0 +1,13 @@
+[
+  {
+    "applies_to_kind": "Synth",
+    "transition": "complete",
+    "conditions": [
+      { "childrenMustBe": "complete" },
+      { "requiresRole": "owner" }
+    ],
+    "effects": [
+      { "setState": { "status": "complete" } }
+    ]
+  }
+]

@@ -23,6 +23,7 @@ export interface Synth extends Entity {
   childrenSynths: Synth[];
   expectedEffort: "low" | "medium" | "high";
   priorPreferenceStrength: "low" | "medium" | "high";
+  status: "not_started" | "in_progress" | "complete";
 }
 
 export interface Horizon extends Entity {
