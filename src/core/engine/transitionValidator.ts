@@ -1,15 +1,16 @@
 import { db } from '../../infra/db/client';
 import { entityLoader } from '../loader/entityLoader';
-// import { Entity, Transition, Rules } from '../types';
+import { Rule, Actor } from '../types';
+import { Synth as DbSynth } from '../../infra/db/schema';
 
 /**
  * Validates if a state transition is allowed based on the ontological rules.
  */
 export async function validateTransition(
-  entity: any, 
+  entity: DbSynth, 
   transition: string, 
-  actor: any, 
-  rules: any[]
+  actor: Actor, 
+  rules: Rule[]
 ): Promise<{ valid: boolean; error?: string }> {
   
   // Find the rule for this transition

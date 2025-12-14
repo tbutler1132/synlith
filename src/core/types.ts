@@ -31,3 +31,19 @@ export interface Horizon extends Entity {
   description: string;
   level: number;
 }
+
+export interface Actor {
+  id: string;
+  role: string;
+}
+
+export interface Rule {
+  transition: string;
+  conditions: Condition[];
+}
+
+export interface Condition {
+  requiresRole?: string;
+  childrenMustBe?: string;
+  [key: string]: any; // Allow for extensibility
+}
